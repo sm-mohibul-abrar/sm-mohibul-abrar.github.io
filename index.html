@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | S.M. Mohibul Abrar</title>
+  
+  <!-- Custom Modern Monogram Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230f172a'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='42' font-weight='900' fill='%233b82f6'>MA</text></svg>">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-200 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      
+      <!-- Brand Title -->
+      <a href="#" class="flex items-center gap-2 tracking-tight group">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+        <span class="text-sm sm:text-base font-bold text-white tracking-wide">
+          Portfolio <span class="text-slate-500 font-light mx-1">|</span> S.M. Mohibul Abrar
+        </span>
+      </a>
+      
+      <!-- Nav Links and Profiles -->
+      <div class="flex items-center space-x-6">
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+          <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+          <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+          <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+          <a href="#education" class="hover:text-blue-400 transition">Education</a>
+        </nav>
+
+        <div class="flex items-center space-x-4 border-l border-slate-800 pl-4 text-base">
+          <a href="https://github.com/sm-mohibul-abrar" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 transition" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#contact" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white transition">
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16 space-y-28">
+
+    <!-- Hero Section (Current Focus removed) -->
+    <section class="pt-8 md:pt-14 flex flex-col items-start gap-6 max-w-4xl">
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+        Hi, I am <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">S.M. Mohibul Abrar</span>
+      </h1>
+
+      <p class="text-xl sm:text-2xl text-slate-300 font-medium leading-relaxed">
+        Building data-driven pipelines, reliable software, and embedded systems.
+      </p>
+
+      <p class="text-base text-slate-400 leading-relaxed max-w-2xl">
+        Computer Science & Engineering graduate from BRAC University. Currently working on geospatial data collection and validation at Barikoi Maps, with hands-on experience in Python, SQL, full-stack JavaScript architectures, and embedded platforms.
+      </p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="space-y-6">
+      <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+        <i class="fa-solid fa-briefcase text-blue-500"></i> Experience
+      </h2>
+      <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+          <div>
+            <h3 class="text-lg font-bold text-white">Data Acquisition Engineer, Intern</h3>
+            <p class="text-blue-400 font-medium text-sm">Barikoi Maps</p>
+          </div>
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800/80 text-slate-300 w-fit">
+            Sept 2026 – Present
+          </span>
+        </div>
+        <ul class="space-y-2 text-slate-300 text-sm list-disc list-inside">
+          <li>Collect, verify, and structure geospatial and location data to support Barikoi’s mapping platform.</li>
+          <li>Clean and validate datasets to maintain accuracy, consistency, and completeness of map data.</li>
+          <li>Work with cross-functional teams to meet data quality and delivery requirements.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="space-y-6">
+      <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+        <i class="fa-solid fa-code text-blue-500"></i> Technical Skills
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <h3 class="font-semibold text-white flex items-center gap-2 text-sm">
+            <i class="fa-solid fa-laptop-code text-blue-400"></i> Programming
+          </h3>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Python</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">C / C++</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">JavaScript (React, Node.js)</span>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <h3 class="font-semibold text-white flex items-center gap-2 text-sm">
+            <i class="fa-solid fa-chart-pie text-blue-400"></i> Data & Analysis
+          </h3>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Pandas</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">NumPy</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Excel</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Google Sheets</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Data Cleaning & Visualization</span>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <h3 class="font-semibold text-white flex items-center gap-2 text-sm">
+            <i class="fa-solid fa-database text-blue-400"></i> Databases
+          </h3>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">MySQL</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">SQL Queries & Joins</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Filtering & Aggregations</span>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <h3 class="font-semibold text-white flex items-center gap-2 text-sm">
+            <i class="fa-solid fa-microchip text-blue-400"></i> Robotics & Embedded
+          </h3>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Arduino</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Raspberry Pi</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">STM32</span>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <h3 class="font-semibold text-white flex items-center gap-2 text-sm">
+            <i class="fa-solid fa-screwdriver-wrench text-blue-400"></i> Tools & Engineering
+          </h3>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Git</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">GitHub</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">DSA</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">CRUD Verification</span>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-900/40 border border-slate-800 space-y-3">
+          <h3 class="font-semibold text-white flex items-center gap-2 text-sm">
+            <i class="fa-solid fa-brain text-blue-400"></i> Key Coursework
+          </h3>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">AI</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Computer Vision</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">DBMS</span>
+            <span class="px-2.5 py-1 bg-slate-800/80 rounded-md">Operating Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="space-y-6">
+      <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+        <i class="fa-solid fa-diagram-project text-blue-500"></i> Featured Projects
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-slate-700 transition">
+          <div class="space-y-3">
+            <h3 class="text-lg font-bold text-white">Bookstore Management System</h3>
+            <p class="text-xs font-medium text-blue-400">React, Node.js, Express, MySQL</p>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Full-stack application built using React, Node.js, and Express with a structured MySQL database. Designed and executed SQL queries for inventory, customer, and sales management with verified CRUD operations.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-slate-700 transition">
+          <div class="space-y-3">
+            <h3 class="text-lg font-bold text-white">Interactive Spreadsheet</h3>
+            <p class="text-xs font-medium text-blue-400">Excel, Google Sheets, Python</p>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Automated real-life workflows using data validation, conditional logic, and dynamic visualizations. Applied data cleaning and transformation techniques for consistent and verified outputs.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800 flex flex-col justify-between space-y-4 hover:border-slate-700 transition">
+          <div class="space-y-3">
+            <h3 class="text-lg font-bold text-white">Dictator Dash</h3>
+            <p class="text-xs font-medium text-blue-400">Python, OpenGL</p>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Real-time 2D game built with custom shooting mechanics, collision detection, and event-driven logic. Solved rendering and collision issues through systematic debugging.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education & Honors -->
+    <section id="education" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="space-y-4">
+        <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+          <i class="fa-solid fa-graduation-cap text-blue-500"></i> Education
+        </h2>
+        <div class="space-y-4">
+          <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+            <h3 class="font-bold text-white">B.Sc. in Computer Science & Engineering</h3>
+            <p class="text-sm text-blue-400">BRAC University, Dhaka</p>
+            <p class="text-xs text-slate-400 mt-1">2022 – 2026 • CGPA: 3.34 / 4.00</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+            <h3 class="font-bold text-white">Higher Secondary Certificate (Science)</h3>
+            <p class="text-sm text-blue-400">Chittagong Cantonment Public College</p>
+            <p class="text-xs text-slate-400 mt-1">2018 – 2020</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+            <h3 class="font-bold text-white">Secondary School Certificate (Science)</h3>
+            <p class="text-sm text-blue-400">Chittagong Government High School</p>
+            <p class="text-xs text-slate-400 mt-1">2016 – 2018</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h2 class="text-2xl font-bold text-white flex items-center gap-3">
+          <i class="fa-solid fa-award text-blue-500"></i> Honors & Leadership
+        </h2>
+        <div class="space-y-4">
+          <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+            <h3 class="font-bold text-white">Merit-Based Scholarship</h3>
+            <p class="text-xs text-blue-400">BRAC University (2022 – 2023)</p>
+            <p class="text-xs text-slate-400 mt-1">Highest distinction for academic performance in first year.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+            <h3 class="font-bold text-white">The Duke of Edinburgh’s International Award</h3>
+            <p class="text-xs text-blue-400">Bronze Level (2023)</p>
+            <p class="text-xs text-slate-400 mt-1">Recognized for leadership, volunteering, fitness, and skills.</p>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800">
+            <h3 class="font-bold text-white">Convocare Foundation</h3>
+            <p class="text-xs text-blue-400">President & Founding Member</p>
+            <p class="text-xs text-slate-400 mt-1">Led student-driven initiative and coordinated cross-functional teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-8 rounded-3xl bg-slate-900/50 border border-slate-800 text-center space-y-6">
+      <h2 class="text-3xl font-bold text-white">Get In Touch</h2>
+      <p class="text-slate-400 max-w-lg mx-auto text-sm">
+        Feel free to reach out for collaborations or opportunities in Data Analysis, Software Engineering, or Embedded Systems.
+      </p>
+      
+      <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
+        <a href="mailto:smmohibulabrar@gmail.com" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white transition flex items-center gap-2">
+          <i class="fa-solid fa-envelope"></i> smmohibulabrar@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 transition flex items-center gap-2">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/sm-mohibul-abrar" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 transition flex items-center gap-2">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
+    <p>© 2026 S.M. Mohibul Abrar. Hosted on GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
