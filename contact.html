@@ -8,7 +8,7 @@
   <style>
     body{background:#020617;color:#94a3b8;font-family:system-ui,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:20px;box-sizing:border-box;text-align:center}
     h1{color:#e2e8f0;font-size:1.6rem;margin:8px 0 22px;word-break:break-all}
-    .b{display:block;margin:10px auto 0;max-width:260px;padding:12px 16px;border-radius:12px;border:1px solid #334155;background:#e2e8f0;color:#020617;font:600 1rem system-ui,sans-serif;text-decoration:none;cursor:pointer}
+    .b{display:block;box-sizing:border-box;width:100%;margin:10px auto 0;max-width:260px;padding:12px 16px;border-radius:12px;border:1px solid #334155;background:#e2e8f0;color:#020617;font:600 1rem system-ui,sans-serif;text-decoration:none;cursor:pointer}
     .b.alt{background:transparent;color:#e2e8f0}
   </style>
 </head>
@@ -27,7 +27,7 @@
         '<p>Call S.M. Mohibul Abrar</p><h1>' + PHONE + '</h1>' +
         '<a class="b" href="tel:' + PHONE + '">Call now</a>' +
         '<button class="b alt" id="copy" type="button">Copy number</button>' +
-        '<a class="b alt" href="./#contact">Back to portfolio</a>';
+        '<a class="b alt" href="./sm_mohibul_abrar.pdf">Back to CV</a>';
       document.getElementById('copy').onclick = function () {
         const el = this, done = () => { el.textContent = 'Copied'; };
         if (navigator.clipboard) navigator.clipboard.writeText(PHONE).then(done, done); else done();
