@@ -6,16 +6,16 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const action = params.get('action');
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
     if (action === 'phone') {
-      window.location.href = 'tel:+8801782455819';
+      // Phone: open the dialer. Computer: go to the contact section.
+      window.location.href = isMobile ? 'tel:+8801782455819' : './#contact';
     } else if (action === 'email') {
-      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-      if (isMobile) {
-        window.location.href = 'mailto:smmohibulabrar@gmail.com';
-      } else {
-        window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=smmohibulabrar@gmail.com';
-      }
+      // Phone: open the mail app. Computer: open Gmail compose.
+      window.location.href = isMobile
+        ? 'mailto:smmohibulabrar@gmail.com'
+        : 'https://mail.google.com/mail/?view=cm&fs=1&to=smmohibulabrar@gmail.com';
     } else {
       window.location.href = './#contact';
     }

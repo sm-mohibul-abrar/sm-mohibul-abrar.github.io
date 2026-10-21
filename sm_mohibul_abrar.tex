@@ -1,0 +1,239 @@
+%-------------------------
+% Universal CV - S.M. Mohibul Abrar
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\definecolor{darkblue}{HTML}{001F66}
+\usepackage[colorlinks=true, urlcolor=darkblue, linkcolor=darkblue, citecolor=darkblue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{15pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeCourseListStart}{
+  \begin{multicols}{3}
+  \raggedcolumns
+  \begin{itemize}[leftmargin=*, label=\textbullet, noitemsep, topsep=0pt]
+}
+\newcommand{\resumeCourseListEnd}{
+  \end{itemize}
+  \end{multicols}\vspace{-5pt}
+}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge S.M. MOHIBUL ABRAR} \\ \vspace{5pt}
+    {\small
+    \href{https://sm-mohibul-abrar.github.io/contact.html?action=phone}{+8801782455819} \;|\;
+    \href{https://sm-mohibul-abrar.github.io/contact.html?action=email}{smmohibulabrar@gmail.com} \;|\;
+    \href{https://www.linkedin.com/in/sm-mohibul-abrar/}{LinkedIn} \;|\;
+    \href{https://github.com/sm-mohibul-abrar}{GitHub} \;|\;
+    \href{https://sm-mohibul-abrar.github.io}{Portfolio}
+    }
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+Graduate in Computer Science \& Engineering from BRAC University with a curiosity mindset and hands-on experience in Python, data engineering, computer vision, and full-stack development. Skilled in building automated data pipelines, working with AI models, and solving real-world problems through clean, efficient code. Driven by a strong desire to grow through practical, impact-driven engineering work.
+
+%-----------SKILLS-----------
+\section{SKILLS}
+\textbf{Programming Languages:} Python (Proficient), JavaScript, C/C++, SQL \\
+\textbf{AI \& Machine Learning:} Hugging Face Transformers, Computer Vision, POI Detection, AI Coding Agents \\
+\textbf{Data Engineering:} Web Scraping \& Crawling, Data Collection Automation, Data Cleaning \& Preprocessing \\
+\textbf{Data Analysis:} Pandas, NumPy, Excel, Google Sheets \\
+\textbf{Web \& Backend:} React.js, Node.js, Express.js, RESTful APIs, HTML, CSS \\
+\textbf{Databases:} MySQL, MongoDB -- schema design, queries, joins, aggregations \\
+\textbf{Tools \& Platforms:} Git, GitHub, Linux (Ubuntu), Bash/Shell Commands \\
+\textbf{Embedded Systems:} Arduino, Raspberry Pi, STM32 \\
+\textbf{Languages:} Bangla (Native), English (Proficient)
+
+%-----------WORK EXPERIENCE-----------
+\section{WORK EXPERIENCE}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Data Acquisition Engineer (Intern)}{Full-time}
+    {Barikoi Maps, Dhaka}{September 2026 -- Present}
+    \resumeItemListStart
+      \resumeItem{Designed and implemented automated data collection pipelines using Python to acquire large-scale geospatial and location datasets efficiently.}
+      \resumeItem{Built web crawlers and scrapers to extract structured data from diverse online sources, handling pagination, rate limiting, and anti-bot measures.}
+      \resumeItem{Queried and managed relational databases to retrieve, filter, and validate acquired datasets for downstream use.}
+      \resumeItem{Performed data cleaning and preprocessing on raw, noisy datasets to ensure quality and consistency across pipelines.}
+      \resumeItem{Developed and applied computer vision techniques for Point of Interest (POI) detection from image data, leveraging pre-trained models from Hugging Face.}
+      \resumeItem{Worked in a Linux (Ubuntu) environment, using shell scripting and command-line tools as part of day-to-day engineering workflows.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {B.Sc. in Computer Science \& Engineering}{2022 -- 2026}
+    {BRAC University, Dhaka}{CGPA: 3.34 / 4.00}
+  \resumeSubheading
+    {Higher Secondary Certificate $|$ Science}{2018 -- 2020}
+    {Chittagong Cantonment Public College, Chittagong}{}
+  \resumeSubheading
+    {Secondary School Certificate $|$ Science}{2016 -- 2018}
+    {Chittagong Government High School, Chittagong}{}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\vspace{-7pt}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+      {\textbf{Bookstore Management System} $|$ \emph{React.js, Node.js, Express.js, MongoDB, MySQL}}{}
+      \resumeItemListStart
+        \resumeItem{Built a full-stack application using the MERN stack with a MySQL relational backend, implementing RESTful APIs for inventory, customer, and sales management.}
+        \resumeItem{Designed database schemas with proper entity relationships and wrote optimized SQL queries for data retrieval and reporting.}
+        \resumeItem{Developed React.js frontend components with clean state management and seamless integration with backend services.}
+      \resumeItemListEnd
+    \vspace{-12pt}
+
+  \resumeProjectHeading
+      {\textbf{Interactive Data Spreadsheet} $|$ \emph{Python, Pandas, Excel, Google Sheets}}{}
+      \resumeItemListStart
+        \resumeItem{Automated real-world data workflows using Python and spreadsheet tools, incorporating validation logic, transformation pipelines, and dynamic visualizations.}
+        \resumeItem{Applied systematic data cleaning techniques to ensure accuracy, completeness, and consistency of structured datasets.}
+      \resumeItemListEnd
+    \vspace{-12pt}
+
+  \resumeProjectHeading
+      {\textbf{Dictator Dash} $|$ \emph{Python, OpenGL, C++}}{}
+      \resumeItemListStart
+        \resumeItem{Developed a real-time 2D game in Python using OpenGL, implementing physics-based mechanics including collision detection, projectile motion, and event-driven logic.}
+        \resumeItem{Debugged rendering and physics edge cases through systematic iterative testing and performance profiling.}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------RELEVANT COURSEWORK-----------
+\section{RELEVANT COURSEWORK}
+\vspace{3pt}
+\resumeCourseListStart
+  \item Artificial Intelligence
+  \item Computer Vision \& \mbox{Image Processing}
+  \item Data Structures \& Algorithms
+  \item Database Management Systems
+  \item Object-Oriented Programming
+  \item Computer Networks
+  \item Operating Systems
+  \item Robotics (Arduino, RPi, STM32)
+  \item Linear Algebra \& Calculus
+\resumeCourseListEnd
+\vspace{5pt}
+
+%-----------HONORS & AWARDS-----------
+\section{HONORS \& AWARDS}
+\resumeItemListStart
+  \resumeItem{\textbf{Merit-Based Scholarship $|$ Highest Distinction in Academics} \hfill \textbf{2022 -- 2023} \\
+  -- Awarded by BRAC University for outstanding academic performance in the first year.}
+  \resumeItem{\textbf{The Duke of Edinburgh's International Award $|$ Bronze Level} \hfill \textbf{2023} \\
+  -- Recognized for leadership, volunteering, fitness, and skill development activities.}
+\resumeItemListEnd
+
+%-----------EXTRACURRICULAR ACTIVITIES-----------
+\section{EXTRACURRICULAR ACTIVITIES}
+\vspace{-7pt}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+      {\textbf{Convocare Foundation} $|$ \emph{President \& Founding Member}}{}
+      \resumeItemListStart
+        \resumeItem{Co-founded and led a student-driven social initiative, coordinating cross-functional teams and overseeing program planning and execution.}
+      \resumeItemListEnd
+    \vspace{-10pt}
+  \resumeProjectHeading
+      {\textbf{CCPC Royal Science Society} $|$ \emph{Executive Director}}{}
+      \resumeItemListStart
+        \resumeItem{Directed science outreach programs and managed organizational operations, fostering analytical and scientific thinking among members.}
+      \resumeItemListEnd
+    \vspace{-10pt}
+  \resumeProjectHeading
+      {\textbf{CGHS Debating Club} $|$ \emph{General Member}}{}
+      \resumeItemListStart
+        \resumeItem{Developed strong communication and logical argumentation skills through competitive debating activities.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-6pt}
+
+%---------REFERENCES--------
+\section{REFERENCES}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Muhammad Iqbal Hossain, PhD $|$ Associate Professor, Department of CSE}{}
+    {BRAC University, Dhaka}{}
+    \vspace{-8pt}
+    \begin{itemize}[leftmargin=0in, label={}]
+        \item \small Email: iqbal.hossain@bracu.ac.bd\vspace{-4pt}
+        \item \small Contact: +8801715065301
+    \end{itemize}
+  \resumeSubheading
+    {Lamiah Israt $|$ Lecturer, Department of CSE}{}
+    {BRAC University, Dhaka}{}
+    \vspace{-8pt}
+    \begin{itemize}[leftmargin=0in, label={}]
+        \item \small Email: lamiah.israt@bracu.ac.bd\vspace{-4pt}
+        \item \small Contact: +8801680971080
+    \end{itemize}
+\resumeSubHeadingListEnd
+
+\end{document}
