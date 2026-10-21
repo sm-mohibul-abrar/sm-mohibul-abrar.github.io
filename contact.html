@@ -2,15 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Connecting...</title>
+  <meta name="robots" content="noindex">
+  <style>
+    body{background:#020617;color:#94a3b8;font-family:system-ui,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:20px;box-sizing:border-box;text-align:center}
+    h1{color:#e2e8f0;font-size:1.6rem;margin:8px 0 22px;word-break:break-all}
+    .b{display:block;margin:10px auto 0;max-width:260px;padding:12px 16px;border-radius:12px;border:1px solid #334155;background:#e2e8f0;color:#020617;font:600 1rem system-ui,sans-serif;text-decoration:none;cursor:pointer}
+    .b.alt{background:transparent;color:#e2e8f0}
+  </style>
+</head>
+<body>
+  <div id="box"><p>Connecting...</p></div>
   <script>
     const params = new URLSearchParams(window.location.search);
     const action = params.get('action');
     const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const PHONE = '+8801782455819';
 
     if (action === 'phone') {
-      // Phone: open the dialer. Computer: go to the contact section.
-      window.location.href = isMobile ? 'tel:+8801782455819' : './#contact';
+      // Show the number with Call and Copy buttons (works on every device).
+      document.title = 'Call S.M. Mohibul Abrar';
+      document.getElementById('box').innerHTML =
+        '<p>Call S.M. Mohibul Abrar</p><h1>' + PHONE + '</h1>' +
+        '<a class="b" href="tel:' + PHONE + '">Call now</a>' +
+        '<button class="b alt" id="copy" type="button">Copy number</button>' +
+        '<a class="b alt" href="./#contact">Back to portfolio</a>';
+      document.getElementById('copy').onclick = function () {
+        const el = this, done = () => { el.textContent = 'Copied'; };
+        if (navigator.clipboard) navigator.clipboard.writeText(PHONE).then(done, done); else done();
+      };
+      // Open the dialer on every device. If the user cancels the system prompt,
+      // this page simply stays as it is (number, Call now, Copy number).
+      window.location.href = 'tel:' + PHONE;
     } else if (action === 'email') {
       // Phone: open the mail app. Computer: open Gmail compose.
       window.location.href = isMobile
@@ -20,8 +44,5 @@
       window.location.href = './#contact';
     }
   </script>
-</head>
-<body style="background:#020617;color:#94a3b8;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;">
-  <p>Connecting...</p>
 </body>
 </html>
