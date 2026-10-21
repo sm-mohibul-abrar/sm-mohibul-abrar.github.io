@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Connecting...</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const action = params.get('action');
+
+    if (action === 'phone') {
+      window.location.href = 'tel:+8801782455819';
+    } else if (action === 'email') {
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = 'mailto:smmohibulabrar@gmail.com';
+      } else {
+        window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=smmohibulabrar@gmail.com';
+      }
+    } else {
+      window.location.href = './#contact';
+    }
+  </script>
+</head>
+<body style="background:#020617;color:#94a3b8;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;">
+  <p>Connecting...</p>
+</body>
+</html>
